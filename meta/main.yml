@@ -1,6 +1,7 @@
 ---
 dependencies:
   - role: geerlingguy.docker
+    become: true
 
 galaxy_info:
   role_name: docker
