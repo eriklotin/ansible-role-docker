@@ -9,7 +9,7 @@ galaxy_info:
   license: MIT
   galaxy_tags:
     - docker
-    - docker-compose
+    - "docker-compose"
     - containers
     - web
     - server
