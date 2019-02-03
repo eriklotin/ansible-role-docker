@@ -1,0 +1,29 @@
+---
+- name: Update APT package manager repositories cache
+  become: true
+  apt:
+    update_cache: yes
+
+- name: Upgrade installed packages
+  become: true
+  apt:
+    upgrade: safe
+
+- name: "Install pip"
+  become: true
+  apt:
+    pkg: python-pip
+    state: present
+
+- name: "Install required python modules"
+  become: true
+  pip:
+    name: ['urllib3', 'pyOpenSSL', 'ndg-httpsclient', 'pyasn1']
+
+- name: "Install docker-compose python module"
+  become: true
+  pip:
+    name: 'docker-compose'
+
+- name: reset ssh connection to allow user changes to affect 'current login user'
+  meta: reset_connection
