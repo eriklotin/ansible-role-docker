@@ -5,11 +5,22 @@ dependencies:
 galaxy_info:
   role_name: docker
   author: Erik Lotin
-  description: This role installs Docker and does some post-install tasks to prepare hosts for running Docker containers.
+  description: Role installs Docker and does some post-install tasks to prepare hosts for running Docker containers.
   license: MIT
+  min_ansible_version: 2.4
+  platforms:
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+        - bionic
   galaxy_tags:
     - docker
-    - "docker-compose"
+    - compose
     - containers
     - web
     - server
