@@ -1,3 +1,15 @@
 ---
 dependencies:
   - role: geerlingguy.docker
+
+galaxy_info:
+  role_name: docker
+  author: Erik Lotin
+  description: This role installs Docker and does some post-install tasks to prepare hosts for running Docker containers.
+  license: MIT
+  galaxy_tags:
+    - docker
+    - docker-compose
+    - containers
+    - web
+    - server
