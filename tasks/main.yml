@@ -12,7 +12,7 @@
 - name: "Install pip"
   become: true
   apt:
-    pkg: python-pip
+    pkg: "{{ python_pip_package }}"
     state: present
 
 - name: "Install required python modules"

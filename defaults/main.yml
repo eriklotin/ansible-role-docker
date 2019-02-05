@@ -1,2 +1,3 @@
 ---
 docker_users: []
+python_pip_package: "python-pip"

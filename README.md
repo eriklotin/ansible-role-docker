@@ -17,6 +17,12 @@ List of system users which will be added to docker system group.
 docker_users: []
 ```
 
+Python pip package name. If you use Python3 on your servers, then set `python_pip_package` to `python3-pip`. 
+Default is `python-pip`.
+```yaml
+python_pip_package: "python-pip"
+```
+
 # Example playbook
 
 ```yaml
