@@ -1,13 +1,4 @@
 ---
-- name: Update APT package manager repositories cache
-  become: true
-  apt:
-    update_cache: yes
-
-- name: Upgrade installed packages
-  become: true
-  apt:
-    upgrade: safe
 
 - name: "Install pip"
   become: true
